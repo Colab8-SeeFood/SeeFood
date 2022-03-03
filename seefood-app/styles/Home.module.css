@@ -109,10 +109,32 @@
   margin-left: 0.5rem;
 }
 
-.form input {
+.form {
   width: 320px;
   height: 50px;
   border: none;
+  position: relative;
+}
+
+.form input {
+  width: 320px;
+  height: 50px;
+  border: 1px solid #ff7033;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #ff7033;
+  padding-left: 20px;
+}
+
+.form button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff7033;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 5px;
 }
 
 @media (max-width: 600px) {

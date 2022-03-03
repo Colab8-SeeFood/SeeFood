@@ -20,7 +20,7 @@ export default function Home() {
           <li>We will give you the best ideas.</li>
           <li>You eat!</li>
         </ol>
-        <form action="" method="get" className="form">
+        <form action="" method="get" className={styles.form}>
           <label htmlFor="zip"></label>
           <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Enter your zip code here"></input> 
           <button>Start</button>
