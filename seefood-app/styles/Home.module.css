@@ -130,11 +130,14 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ff7033;
+  background-image: url("./../public/go_button.png");
+  background-position: center;
+  background-size: 100%;
   border: none;
   position: absolute;
   right: 10px;
   top: 5px;
+  padding: 0;
 }
 
 @media (max-width: 600px) {
