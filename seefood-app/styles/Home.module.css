@@ -130,7 +130,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ff7033;
+  /* background: url("./../public/go_button.png"); */
   border: none;
   position: absolute;
   right: 10px;

@@ -1,8 +1,28 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useState } from 'react';
+import questions from '../list.json';
+
 
 export default function Home() {
+
+  const [zip, setZip] = useState("");
+  console.log(`The zip is ${zip}`);
+  console.log(`The zip is ${setZip}`);
+
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+
+  const handlePrevious = () => {
+    const prevQues = currentQuestion - 1;
+    prevQues >= 0 && setCurrentQuestion(prevQues);
+  };
+  
+  const handleNext = () => {
+    const nextQues = currentQuestion + 1;
+    nextQues < questions.length && setCurrentQuestion(nextQues);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -22,9 +42,26 @@ export default function Home() {
         </ol>
         <form action="" method="get" className={styles.form}>
           <label htmlFor="zip"></label>
-          <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Enter your zip code here"></input> 
-          <button>Start</button>
+          <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Enter your zip code here" onChange={(event) => setZip(event.target.value)}></input> 
+          <button type="submit"></button>
         </form>
+
+        <div>
+          <h4>Question {currentQuestion + 1} of {questions.length}</h4>
+          <div>{questions[currentQuestion].question}</div>
+        </div>
+
+        <div>
+          {questions[currentQuestion].answerOptions.map((answer, index) => (
+            <div key={index}>
+              <input type="radio" />
+              <p>{answer.answer}</p>
+            </div>
+          ))}
+        </div>
+
+        <button onClick={handlePrevious}>Previous</button>
+        <button onClick={handleNext}>Next</button>
         
       </main>
 
