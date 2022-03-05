@@ -23,7 +23,7 @@ export default function Home() {
         <form action="" method="get" className={styles.form}>
           <label htmlFor="zip"></label>
           <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Enter your zip code here"></input> 
-          <button>Start</button>
+          <button></button>
         </form>
         
       </main>
