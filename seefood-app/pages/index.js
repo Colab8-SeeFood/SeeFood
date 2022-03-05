@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         <form action="" method="get" className={styles.form}>
           <label htmlFor="zip"></label>
           <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Enter your zip code here"></input> 
-          <button></button>
+          <Link href="/questions"><button></button></Link>
         </form>
         
       </main>
