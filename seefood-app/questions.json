@@ -1,0 +1,20 @@
+[
+    {
+        "question": "How would you like to enjoy your food?",
+        "answerOptions": [
+          { "answer": "Dine in" },
+          { "answer": "Take out" },
+          { "answer": "Pick up" },
+          { "answer": "Delivered" }
+        ]
+    },
+    {
+        "question": "How much are you willing to spend?",
+        "answerOptions": [
+          { "answer": "$" },
+          { "answer": "$$" },
+          { "answer": "$$$" },
+          { "answer": "Sky's the limit!" }
+        ]
+    }
+]

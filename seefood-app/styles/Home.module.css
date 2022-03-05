@@ -140,6 +140,23 @@
   top: 5px;
 }
 
+.questions button {
+  margin: 15px;
+  width: 320px;
+  height: 50px;
+  border-radius: 50px;
+  color: #ff7033;
+  font-size: 1rem;
+  border: none;
+}
+
+.questions button:hover,
+.questions button:active {
+  background: #ff7033;
+  color: white;
+  transition: background 0.2s;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
