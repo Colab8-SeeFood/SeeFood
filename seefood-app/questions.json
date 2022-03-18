@@ -1,5 +1,14 @@
 [
-    {
+  {
+    "question": "How much are you willing to spend?",
+    "answerOptions": [
+      { "answer": "$" },
+      { "answer": "$$" },
+      { "answer": "$$$" },
+      { "answer": "Sky's the limit!" }
+    ]
+  },
+  {
         "question": "How would you like to enjoy your food?",
         "answerOptions": [
           { "answer": "Dine in" },

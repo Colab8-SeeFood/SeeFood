@@ -140,6 +140,11 @@
   top: 5px;
 }
 
+.questions div {
+  display: flex;
+  flex-direction: column;
+}
+
 .questions button {
   margin: 15px;
   width: 320px;
@@ -152,6 +157,28 @@
 
 .questions button:hover,
 .questions button:active {
+  background: #ff7033;
+  color: white;
+  transition: background 0.2s;
+}
+
+.questionsImg div {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionsImg button {
+  width: 350px;
+  /* height: 150px; */
+  padding: 10px 0;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.questionsImg button:hover,
+.questionsImg button:active {
   background: #ff7033;
   color: white;
   transition: background 0.2s;
