@@ -15,6 +15,7 @@ export default function Home() {
     console.log(zip);
     // event.target.reset()
     router.push('question1')
+    // test
     // showModal = true;
     // console.log(showModal);
   };
