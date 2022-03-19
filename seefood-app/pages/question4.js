@@ -27,7 +27,7 @@ export default function Question3() {
                             <Link href="answers"><button>$</button></Link>
                             <Link href="answers"><button>$$</button></Link>
                             <Link href="answers"><button>$$$</button></Link>
-                            <Link href="answers"><button>I don't care</button></Link>
+                            <Link href="answers"><button>I don&apos;t care</button></Link>
                         </div>
                 </div>
 
