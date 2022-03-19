@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import { useState } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
-// import Pizza from  
 
 export default function Answers() {
 
@@ -20,17 +19,33 @@ export default function Answers() {
                 <div>
                     <div>Based on your answers...</div>
                 </div>
-                <div>
-                    <div>This is your top choice</div>
+                
+
+                <div className={styles.questionsImg}>
+                    <div>
+                        <h1>This is your top choice</h1>
+                    </div>
+                    <div className={styles.answers}>
+                        <Image src={"/ivan-torres-unsplash.jpg"} width={350} height={250} />
+                    </div>
+                    <p className={styles.paragraph}>
+                        <span className={styles.span}>Pizzeria da Michelle</span> <br />
+                        123 Street Avenue <br/>
+                        San Francisco, California 91123 <br/>
+                        Open today: 12:00PM - 10:00PM
+                    </p>
                 </div>
+                <button className={styles.button}>Get Directions</button>
 
-                <div className={styles.questions}>
-                    <div>
+                <div>
 
+                    <h2>Photos</h2>
+
+                    <div className={styles.additionalImg}>
+                        <Image src={"/dinner-for-one-of-wood-fired-pizza-paired-with-cold-beer.jpg"} width={250} height={150}/>
+                        <Image src={"/margarita-pizza-and-fresh-tomatos.jpg"} width={250} height={150}/>
                     </div>
-                    <div>
-                        <Image src={"/ivan-torres-unsplash.jpg"} width={200} height={150} />
-                    </div>
+
                 </div>
 
                 <Link href="question4"><button>Previous</button></Link>

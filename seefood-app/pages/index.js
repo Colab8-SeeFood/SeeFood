@@ -15,7 +15,6 @@ export default function Home() {
     console.log(zip);
     // event.target.reset()
     router.push('question1')
-    // test
     // showModal = true;
     // console.log(showModal);
   };
@@ -50,7 +49,7 @@ export default function Home() {
         <ol>
           <li>Give us a location.</li>
           <li>Answer some questions.</li>
-          <li>We will give you the best ideas.</li>
+          <li>We'll give you the best ideas.</li>
           <li>You eat!</li>
         </ol>
 

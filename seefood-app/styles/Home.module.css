@@ -109,6 +109,26 @@
   margin-left: 0.5rem;
 }
 
+.span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.paragraph {
+  line-height: 1.5;
+}
+
+.button {
+  margin: 15px;
+  width: 320px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #ff7033;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
 .form {
   width: 320px;
   height: 50px;
@@ -170,11 +190,12 @@
 .questionsImg button {
   width: 350px;
   /* height: 150px; */
-  padding: 10px 0;
+  padding: 0 0 5px 0;
   border-radius: 10px;
   border: none;
   margin: 10px;
   font-size: 2rem;
+  overflow: hidden;
 }
 
 .questionsImg button:hover,
@@ -182,6 +203,19 @@
   background: #ff7033;
   color: white;
   transition: background 0.2s;
+}
+
+.answers {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.questionsImg h1 {
+  color: #ff7033;
+}
+
+.additionalImg Image {
+  margin: 15px;
 }
 
 @media (max-width: 600px) {
