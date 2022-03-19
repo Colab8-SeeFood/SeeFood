@@ -22,7 +22,13 @@ export default function Question3() {
                 </div>
 
                 <div className={styles.questions}>
+                <p style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
                     How would you like to enjoy your food?
+                </p>
                         <div>
                             <Link href="question4"><button>Dine in</button></Link>
                             <Link href="question4"><button>Take out</button></Link>

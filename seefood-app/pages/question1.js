@@ -22,7 +22,13 @@ export default function Question1() {
                 </div>
 
                 <div className={styles.questionsImg}>
+                <p style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
                     The one that makes you really hungry right now
+                </p>
                         <div>
                             <Link href="question2"><button><Image src={"/ivan-torres-unsplash.jpg"} width={350} height={250} />Pizza</button></Link>
                             <Link href="question2"><button><Image src={"/loes-klinker-unsplash.jpg"} width={350} height={250} />Greek Salad</button></Link>
