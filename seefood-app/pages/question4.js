@@ -22,12 +22,12 @@ export default function Question3() {
                 </div>
 
                 <div className={styles.questions}>
-                    The one that makes you really hungry right now
+                    How much are you willing to spend?
                         <div>
                             <Link href="answers"><button>$</button></Link>
                             <Link href="answers"><button>$$</button></Link>
                             <Link href="answers"><button>$$$</button></Link>
-                            <Link href="answers"><button>I don&apos;t care</button></Link>
+                            <Link href="answers"><button> </button></Link>
                         </div>
                 </div>
 
